@@ -7,9 +7,54 @@
 @import 'foundation/components/dropdown';
 @import 'foundation/components/dropdown-buttons';
 @import 'foundation/components/top-bar';
+@import 'foundation/components/sub-nav';
 
 $bright : purple;
 
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
   background: $bright;
+  background-image: url(/assets/bg.jpg);
+  background-size: cover;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.sub-nav {
+    width: 100%;
+    background-color: #3A3A3C;
+    padding: 2% 2%;
+}
+
+.feed {
+ padding: 10px;
+}
+
+.post {
+    background-color: white;
+    margin: 3% 3% 3% 3%;
+    padding: 2%;
+}
+
+.site-footer, .page-wrap:after {
+  height: 15%;
+}
+.site-footer {
+  background: #999999;
 }
