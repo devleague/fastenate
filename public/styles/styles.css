@@ -1,2 +1,15 @@
-body h1 {
-  background-color: #fff; }
+@import "partials/_settings.scss";
+
+@import 'foundation/components/grid';
+@import 'foundation/components/block-grid';
+@import 'foundation/components/button-groups';
+@import 'foundation/components/buttons';
+@import 'foundation/components/dropdown';
+@import 'foundation/components/dropdown-buttons';
+@import 'foundation/components/top-bar';
+
+$bright : purple;
+
+body {
+  background: $bright;
+}
