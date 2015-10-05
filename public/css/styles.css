@@ -1907,893 +1907,6 @@ button::-moz-focus-inner {
   button, .button {
     display: inline-block; } }
 
-/* line 158, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group {
-  list-style: none;
-  margin: 0;
-  left: 0; }
-  /* line 172, bower_components/foundation/scss/foundation/components/_global.scss */
-  .button-group:before, .button-group:after {
-    content: " ";
-    display: table; }
-  /* line 173, bower_components/foundation/scss/foundation/components/_global.scss */
-  .button-group:after {
-    clear: both; }
-  /* line 160, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.even-2 li {
-    display: inline-block;
-    margin: 0 -2px;
-    width: 50%; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-2 li > button, .button-group.even-2 li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-2 li:first-child button, .button-group.even-2 li:first-child .button {
-      border-left: 0; }
-    /* line 152, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-2 li button, .button-group.even-2 li .button {
-      width: 100%; }
-  /* line 160, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.even-3 li {
-    display: inline-block;
-    margin: 0 -2px;
-    width: 33.33333%; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-3 li > button, .button-group.even-3 li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-3 li:first-child button, .button-group.even-3 li:first-child .button {
-      border-left: 0; }
-    /* line 152, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-3 li button, .button-group.even-3 li .button {
-      width: 100%; }
-  /* line 160, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.even-4 li {
-    display: inline-block;
-    margin: 0 -2px;
-    width: 25%; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-4 li > button, .button-group.even-4 li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-4 li:first-child button, .button-group.even-4 li:first-child .button {
-      border-left: 0; }
-    /* line 152, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-4 li button, .button-group.even-4 li .button {
-      width: 100%; }
-  /* line 160, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.even-5 li {
-    display: inline-block;
-    margin: 0 -2px;
-    width: 20%; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-5 li > button, .button-group.even-5 li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-5 li:first-child button, .button-group.even-5 li:first-child .button {
-      border-left: 0; }
-    /* line 152, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-5 li button, .button-group.even-5 li .button {
-      width: 100%; }
-  /* line 160, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.even-6 li {
-    display: inline-block;
-    margin: 0 -2px;
-    width: 16.66667%; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-6 li > button, .button-group.even-6 li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-6 li:first-child button, .button-group.even-6 li:first-child .button {
-      border-left: 0; }
-    /* line 152, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-6 li button, .button-group.even-6 li .button {
-      width: 100%; }
-  /* line 160, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.even-7 li {
-    display: inline-block;
-    margin: 0 -2px;
-    width: 14.28571%; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-7 li > button, .button-group.even-7 li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-7 li:first-child button, .button-group.even-7 li:first-child .button {
-      border-left: 0; }
-    /* line 152, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-7 li button, .button-group.even-7 li .button {
-      width: 100%; }
-  /* line 160, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.even-8 li {
-    display: inline-block;
-    margin: 0 -2px;
-    width: 12.5%; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-8 li > button, .button-group.even-8 li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-8 li:first-child button, .button-group.even-8 li:first-child .button {
-      border-left: 0; }
-    /* line 152, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.even-8 li button, .button-group.even-8 li .button {
-      width: 100%; }
-  /* line 164, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group > li {
-    display: inline-block;
-    margin: 0 -2px; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group > li > button, .button-group > li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group > li:first-child button, .button-group > li:first-child .button {
-      border-left: 0; }
-  /* line 167, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.stack > li {
-    display: block;
-    margin: 0;
-    float: none; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.stack > li > button, .button-group.stack > li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.stack > li:first-child button, .button-group.stack > li:first-child .button {
-      border-left: 0; }
-    /* line 69, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.stack > li > button, .button-group.stack > li .button {
-      border-color: rgba(255, 255, 255, 0.5);
-      border-left-width: 0;
-      border-top: 1px solid;
-      display: block;
-      margin: 0; }
-    /* line 76, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.stack > li > button {
-      width: 100%; }
-    /* line 81, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.stack > li:first-child button, .button-group.stack > li:first-child .button {
-      border-top: 0; }
-  /* line 171, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.stack-for-small > li {
-    display: inline-block;
-    margin: 0 -2px; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.stack-for-small > li > button, .button-group.stack-for-small > li .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.stack-for-small > li:first-child button, .button-group.stack-for-small > li:first-child .button {
-      border-left: 0; }
-    @media only screen and (max-width: 40em) {
-      /* line 171, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.stack-for-small > li {
-        display: block;
-        margin: 0; }
-        /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-        .button-group.stack-for-small > li > button, .button-group.stack-for-small > li .button {
-          border-left: 1px solid;
-          border-color: rgba(255, 255, 255, 0.5); }
-        /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-        .button-group.stack-for-small > li:first-child button, .button-group.stack-for-small > li:first-child .button {
-          border-left: 0; }
-        /* line 69, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-        .button-group.stack-for-small > li > button, .button-group.stack-for-small > li .button {
-          border-color: rgba(255, 255, 255, 0.5);
-          border-left-width: 0;
-          border-top: 1px solid;
-          display: block;
-          margin: 0; }
-        /* line 76, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-        .button-group.stack-for-small > li > button {
-          width: 100%; }
-        /* line 81, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-        .button-group.stack-for-small > li:first-child button, .button-group.stack-for-small > li:first-child .button {
-          border-top: 0; } }
-  /* line 179, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.radius > * {
-    display: inline-block;
-    margin: 0 -2px; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius > * > button, .button-group.radius > * .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius > *:first-child button, .button-group.radius > *:first-child .button {
-      border-left: 0; }
-    /* line 124, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius > *,
-    .button-group.radius > * > a,
-    .button-group.radius > * > button,
-    .button-group.radius > * > .button {
-      border-radius: 0; }
-    /* line 128, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius > *:first-child,
-    .button-group.radius > *:first-child > a,
-    .button-group.radius > *:first-child > button,
-    .button-group.radius > *:first-child > .button {
-      -webkit-border-bottom-left-radius: 3px;
-      -webkit-border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-      border-top-left-radius: 3px; }
-    /* line 139, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius > *:last-child,
-    .button-group.radius > *:last-child > a,
-    .button-group.radius > *:last-child > button,
-    .button-group.radius > *:last-child > .button {
-      -webkit-border-bottom-right-radius: 3px;
-      -webkit-border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-      border-top-right-radius: 3px; }
-  /* line 180, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.radius.stack > * {
-    display: block;
-    margin: 0; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack > * > button, .button-group.radius.stack > * .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack > *:first-child button, .button-group.radius.stack > *:first-child .button {
-      border-left: 0; }
-    /* line 69, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack > * > button, .button-group.radius.stack > * .button {
-      border-color: rgba(255, 255, 255, 0.5);
-      border-left-width: 0;
-      border-top: 1px solid;
-      display: block;
-      margin: 0; }
-    /* line 76, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack > * > button {
-      width: 100%; }
-    /* line 81, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack > *:first-child button, .button-group.radius.stack > *:first-child .button {
-      border-top: 0; }
-    /* line 124, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack > *,
-    .button-group.radius.stack > * > a,
-    .button-group.radius.stack > * > button,
-    .button-group.radius.stack > * > .button {
-      border-radius: 0; }
-    /* line 128, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack > *:first-child,
-    .button-group.radius.stack > *:first-child > a,
-    .button-group.radius.stack > *:first-child > button,
-    .button-group.radius.stack > *:first-child > .button {
-      -webkit-top-left-radius: 3px;
-      -webkit-top-right-radius: 3px;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px; }
-    /* line 139, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack > *:last-child,
-    .button-group.radius.stack > *:last-child > a,
-    .button-group.radius.stack > *:last-child > button,
-    .button-group.radius.stack > *:last-child > .button {
-      -webkit-bottom-left-radius: 3px;
-      -webkit-bottom-right-radius: 3px;
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px; }
-  @media only screen and (min-width: 40.0625em) {
-    /* line 181, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack-for-small > * {
-      display: inline-block;
-      margin: 0 -2px; }
-      /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > * > button, .button-group.radius.stack-for-small > * .button {
-        border-left: 1px solid;
-        border-color: rgba(255, 255, 255, 0.5); }
-      /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > *:first-child button, .button-group.radius.stack-for-small > *:first-child .button {
-        border-left: 0; }
-      /* line 124, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > *,
-      .button-group.radius.stack-for-small > * > a,
-      .button-group.radius.stack-for-small > * > button,
-      .button-group.radius.stack-for-small > * > .button {
-        border-radius: 0; }
-      /* line 128, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > *:first-child,
-      .button-group.radius.stack-for-small > *:first-child > a,
-      .button-group.radius.stack-for-small > *:first-child > button,
-      .button-group.radius.stack-for-small > *:first-child > .button {
-        -webkit-border-bottom-left-radius: 3px;
-        -webkit-border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
-        border-top-left-radius: 3px; }
-      /* line 139, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > *:last-child,
-      .button-group.radius.stack-for-small > *:last-child > a,
-      .button-group.radius.stack-for-small > *:last-child > button,
-      .button-group.radius.stack-for-small > *:last-child > .button {
-        -webkit-border-bottom-right-radius: 3px;
-        -webkit-border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        border-top-right-radius: 3px; } }
-  @media only screen and (max-width: 40em) {
-    /* line 181, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.radius.stack-for-small > * {
-      display: block;
-      margin: 0; }
-      /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > * > button, .button-group.radius.stack-for-small > * .button {
-        border-left: 1px solid;
-        border-color: rgba(255, 255, 255, 0.5); }
-      /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > *:first-child button, .button-group.radius.stack-for-small > *:first-child .button {
-        border-left: 0; }
-      /* line 69, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > * > button, .button-group.radius.stack-for-small > * .button {
-        border-color: rgba(255, 255, 255, 0.5);
-        border-left-width: 0;
-        border-top: 1px solid;
-        display: block;
-        margin: 0; }
-      /* line 76, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > * > button {
-        width: 100%; }
-      /* line 81, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > *:first-child button, .button-group.radius.stack-for-small > *:first-child .button {
-        border-top: 0; }
-      /* line 124, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > *,
-      .button-group.radius.stack-for-small > * > a,
-      .button-group.radius.stack-for-small > * > button,
-      .button-group.radius.stack-for-small > * > .button {
-        border-radius: 0; }
-      /* line 128, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > *:first-child,
-      .button-group.radius.stack-for-small > *:first-child > a,
-      .button-group.radius.stack-for-small > *:first-child > button,
-      .button-group.radius.stack-for-small > *:first-child > .button {
-        -webkit-top-left-radius: 3px;
-        -webkit-top-right-radius: 3px;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px; }
-      /* line 139, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.radius.stack-for-small > *:last-child,
-      .button-group.radius.stack-for-small > *:last-child > a,
-      .button-group.radius.stack-for-small > *:last-child > button,
-      .button-group.radius.stack-for-small > *:last-child > .button {
-        -webkit-bottom-left-radius: 3px;
-        -webkit-bottom-right-radius: 3px;
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px; } }
-  /* line 190, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.round > * {
-    display: inline-block;
-    margin: 0 -2px; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round > * > button, .button-group.round > * .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round > *:first-child button, .button-group.round > *:first-child .button {
-      border-left: 0; }
-    /* line 124, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round > *,
-    .button-group.round > * > a,
-    .button-group.round > * > button,
-    .button-group.round > * > .button {
-      border-radius: 0; }
-    /* line 128, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round > *:first-child,
-    .button-group.round > *:first-child > a,
-    .button-group.round > *:first-child > button,
-    .button-group.round > *:first-child > .button {
-      -webkit-border-bottom-left-radius: 1000px;
-      -webkit-border-top-left-radius: 1000px;
-      border-bottom-left-radius: 1000px;
-      border-top-left-radius: 1000px; }
-    /* line 139, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round > *:last-child,
-    .button-group.round > *:last-child > a,
-    .button-group.round > *:last-child > button,
-    .button-group.round > *:last-child > .button {
-      -webkit-border-bottom-right-radius: 1000px;
-      -webkit-border-top-right-radius: 1000px;
-      border-bottom-right-radius: 1000px;
-      border-top-right-radius: 1000px; }
-  /* line 191, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-group.round.stack > * {
-    display: block;
-    margin: 0; }
-    /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack > * > button, .button-group.round.stack > * .button {
-      border-left: 1px solid;
-      border-color: rgba(255, 255, 255, 0.5); }
-    /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack > *:first-child button, .button-group.round.stack > *:first-child .button {
-      border-left: 0; }
-    /* line 69, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack > * > button, .button-group.round.stack > * .button {
-      border-color: rgba(255, 255, 255, 0.5);
-      border-left-width: 0;
-      border-top: 1px solid;
-      display: block;
-      margin: 0; }
-    /* line 76, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack > * > button {
-      width: 100%; }
-    /* line 81, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack > *:first-child button, .button-group.round.stack > *:first-child .button {
-      border-top: 0; }
-    /* line 124, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack > *,
-    .button-group.round.stack > * > a,
-    .button-group.round.stack > * > button,
-    .button-group.round.stack > * > .button {
-      border-radius: 0; }
-    /* line 128, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack > *:first-child,
-    .button-group.round.stack > *:first-child > a,
-    .button-group.round.stack > *:first-child > button,
-    .button-group.round.stack > *:first-child > .button {
-      -webkit-top-left-radius: 1rem;
-      -webkit-top-right-radius: 1rem;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem; }
-    /* line 139, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack > *:last-child,
-    .button-group.round.stack > *:last-child > a,
-    .button-group.round.stack > *:last-child > button,
-    .button-group.round.stack > *:last-child > .button {
-      -webkit-bottom-left-radius: 1rem;
-      -webkit-bottom-right-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem; }
-  @media only screen and (min-width: 40.0625em) {
-    /* line 192, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack-for-small > * {
-      display: inline-block;
-      margin: 0 -2px; }
-      /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > * > button, .button-group.round.stack-for-small > * .button {
-        border-left: 1px solid;
-        border-color: rgba(255, 255, 255, 0.5); }
-      /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > *:first-child button, .button-group.round.stack-for-small > *:first-child .button {
-        border-left: 0; }
-      /* line 124, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > *,
-      .button-group.round.stack-for-small > * > a,
-      .button-group.round.stack-for-small > * > button,
-      .button-group.round.stack-for-small > * > .button {
-        border-radius: 0; }
-      /* line 128, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > *:first-child,
-      .button-group.round.stack-for-small > *:first-child > a,
-      .button-group.round.stack-for-small > *:first-child > button,
-      .button-group.round.stack-for-small > *:first-child > .button {
-        -webkit-border-bottom-left-radius: 1000px;
-        -webkit-border-top-left-radius: 1000px;
-        border-bottom-left-radius: 1000px;
-        border-top-left-radius: 1000px; }
-      /* line 139, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > *:last-child,
-      .button-group.round.stack-for-small > *:last-child > a,
-      .button-group.round.stack-for-small > *:last-child > button,
-      .button-group.round.stack-for-small > *:last-child > .button {
-        -webkit-border-bottom-right-radius: 1000px;
-        -webkit-border-top-right-radius: 1000px;
-        border-bottom-right-radius: 1000px;
-        border-top-right-radius: 1000px; } }
-  @media only screen and (max-width: 40em) {
-    /* line 192, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-    .button-group.round.stack-for-small > * {
-      display: block;
-      margin: 0; }
-      /* line 39, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > * > button, .button-group.round.stack-for-small > * .button {
-        border-left: 1px solid;
-        border-color: rgba(255, 255, 255, 0.5); }
-      /* line 45, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > *:first-child button, .button-group.round.stack-for-small > *:first-child .button {
-        border-left: 0; }
-      /* line 69, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > * > button, .button-group.round.stack-for-small > * .button {
-        border-color: rgba(255, 255, 255, 0.5);
-        border-left-width: 0;
-        border-top: 1px solid;
-        display: block;
-        margin: 0; }
-      /* line 76, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > * > button {
-        width: 100%; }
-      /* line 81, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > *:first-child button, .button-group.round.stack-for-small > *:first-child .button {
-        border-top: 0; }
-      /* line 124, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > *,
-      .button-group.round.stack-for-small > * > a,
-      .button-group.round.stack-for-small > * > button,
-      .button-group.round.stack-for-small > * > .button {
-        border-radius: 0; }
-      /* line 128, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > *:first-child,
-      .button-group.round.stack-for-small > *:first-child > a,
-      .button-group.round.stack-for-small > *:first-child > button,
-      .button-group.round.stack-for-small > *:first-child > .button {
-        -webkit-top-left-radius: 1rem;
-        -webkit-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem; }
-      /* line 139, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-      .button-group.round.stack-for-small > *:last-child,
-      .button-group.round.stack-for-small > *:last-child > a,
-      .button-group.round.stack-for-small > *:last-child > button,
-      .button-group.round.stack-for-small > *:last-child > .button {
-        -webkit-bottom-left-radius: 1rem;
-        -webkit-bottom-right-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem; } }
-
-/* line 172, bower_components/foundation/scss/foundation/components/_global.scss */
-.button-bar:before, .button-bar:after {
-  content: " ";
-  display: table; }
-
-/* line 173, bower_components/foundation/scss/foundation/components/_global.scss */
-.button-bar:after {
-  clear: both; }
-
-/* line 204, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-bar .button-group {
-  float: left;
-  margin-right: 0.625rem; }
-  /* line 32, bower_components/foundation/scss/foundation/components/_button-groups.scss */
-  .button-bar .button-group div {
-    overflow: hidden; }
-
-/* Foundation Dropdowns */
-/* line 231, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-.f-dropdown {
-  display: none;
-  left: -9999px;
-  list-style: none;
-  margin-left: 0;
-  position: absolute;
-  background: #FFFFFF;
-  border: solid 1px #cccccc;
-  font-size: 0.875rem;
-  height: auto;
-  max-height: none;
-  width: 100%;
-  z-index: 89;
-  margin-top: 2px;
-  max-width: 200px; }
-  /* line 73, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.open {
-    display: block; }
-  /* line 77, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown > *:first-child {
-    margin-top: 0; }
-  /* line 78, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown > *:last-child {
-    margin-bottom: 0; }
-  /* line 105, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown:before {
-    border: inset 6px;
-    content: "";
-    display: block;
-    height: 0;
-    width: 0;
-    border-color: transparent transparent #FFFFFF transparent;
-    border-bottom-style: solid;
-    position: absolute;
-    top: -12px;
-    left: 10px;
-    z-index: 89; }
-  /* line 112, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown:after {
-    border: inset 7px;
-    content: "";
-    display: block;
-    height: 0;
-    width: 0;
-    border-color: transparent transparent #cccccc transparent;
-    border-bottom-style: solid;
-    position: absolute;
-    top: -14px;
-    left: 9px;
-    z-index: 88; }
-  /* line 120, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.right:before {
-    left: auto;
-    right: 10px; }
-  /* line 124, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.right:after {
-    left: auto;
-    right: 9px; }
-  /* line 232, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.drop-right {
-    display: none;
-    left: -9999px;
-    list-style: none;
-    margin-left: 0;
-    position: absolute;
-    background: #FFFFFF;
-    border: solid 1px #cccccc;
-    font-size: 0.875rem;
-    height: auto;
-    max-height: none;
-    width: 100%;
-    z-index: 89;
-    margin-top: 0;
-    margin-left: 2px;
-    max-width: 200px; }
-    /* line 73, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-right.open {
-      display: block; }
-    /* line 77, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-right > *:first-child {
-      margin-top: 0; }
-    /* line 78, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-right > *:last-child {
-      margin-bottom: 0; }
-    /* line 135, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-right:before {
-      border: inset 6px;
-      content: "";
-      display: block;
-      height: 0;
-      width: 0;
-      border-color: transparent #FFFFFF transparent transparent;
-      border-right-style: solid;
-      position: absolute;
-      top: 10px;
-      left: -12px;
-      z-index: 89; }
-    /* line 142, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-right:after {
-      border: inset 7px;
-      content: "";
-      display: block;
-      height: 0;
-      width: 0;
-      border-color: transparent #cccccc transparent transparent;
-      border-right-style: solid;
-      position: absolute;
-      top: 9px;
-      left: -14px;
-      z-index: 88; }
-  /* line 236, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.drop-left {
-    display: none;
-    left: -9999px;
-    list-style: none;
-    margin-left: 0;
-    position: absolute;
-    background: #FFFFFF;
-    border: solid 1px #cccccc;
-    font-size: 0.875rem;
-    height: auto;
-    max-height: none;
-    width: 100%;
-    z-index: 89;
-    margin-top: 0;
-    margin-left: -2px;
-    max-width: 200px; }
-    /* line 73, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-left.open {
-      display: block; }
-    /* line 77, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-left > *:first-child {
-      margin-top: 0; }
-    /* line 78, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-left > *:last-child {
-      margin-bottom: 0; }
-    /* line 156, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-left:before {
-      border: inset 6px;
-      content: "";
-      display: block;
-      height: 0;
-      width: 0;
-      border-color: transparent transparent transparent #FFFFFF;
-      border-left-style: solid;
-      position: absolute;
-      top: 10px;
-      right: -12px;
-      left: auto;
-      z-index: 89; }
-    /* line 164, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-left:after {
-      border: inset 7px;
-      content: "";
-      display: block;
-      height: 0;
-      width: 0;
-      border-color: transparent transparent transparent #cccccc;
-      border-left-style: solid;
-      position: absolute;
-      top: 9px;
-      right: -14px;
-      left: auto;
-      z-index: 88; }
-  /* line 242, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.drop-top {
-    display: none;
-    left: -9999px;
-    list-style: none;
-    margin-left: 0;
-    position: absolute;
-    background: #FFFFFF;
-    border: solid 1px #cccccc;
-    font-size: 0.875rem;
-    height: auto;
-    max-height: none;
-    width: 100%;
-    z-index: 89;
-    margin-left: 0;
-    margin-top: -2px;
-    max-width: 200px; }
-    /* line 73, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-top.open {
-      display: block; }
-    /* line 77, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-top > *:first-child {
-      margin-top: 0; }
-    /* line 78, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-top > *:last-child {
-      margin-bottom: 0; }
-    /* line 179, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-top:before {
-      border: inset 6px;
-      content: "";
-      display: block;
-      height: 0;
-      width: 0;
-      border-color: #FFFFFF transparent transparent transparent;
-      border-top-style: solid;
-      bottom: -12px;
-      position: absolute;
-      top: auto;
-      left: 10px;
-      right: auto;
-      z-index: 89; }
-    /* line 188, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.drop-top:after {
-      border: inset 7px;
-      content: "";
-      display: block;
-      height: 0;
-      width: 0;
-      border-color: #cccccc transparent transparent transparent;
-      border-top-style: solid;
-      bottom: -14px;
-      position: absolute;
-      top: auto;
-      left: 9px;
-      right: auto;
-      z-index: 88; }
-  /* line 247, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown li {
-    cursor: pointer;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    margin: 0; }
-    /* line 216, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown li:hover,
-    .f-dropdown li:focus {
-      background: #EEEEEE; }
-    /* line 218, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown li.radius {
-      border-radius: 3px; }
-    /* line 220, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown li a {
-      display: block;
-      padding: 0.5rem;
-      color: #555555; }
-  /* line 250, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.content {
-    display: none;
-    left: -9999px;
-    list-style: none;
-    margin-left: 0;
-    position: absolute;
-    background: #FFFFFF;
-    border: solid 1px #cccccc;
-    font-size: 0.875rem;
-    height: auto;
-    max-height: none;
-    padding: 1.25rem;
-    width: 100%;
-    z-index: 89;
-    max-width: 200px; }
-    /* line 73, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.content.open {
-      display: block; }
-    /* line 77, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.content > *:first-child {
-      margin-top: 0; }
-    /* line 78, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.content > *:last-child {
-      margin-bottom: 0; }
-  /* line 253, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.tiny {
-    max-width: 200px; }
-  /* line 254, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.small {
-    max-width: 300px; }
-  /* line 255, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.medium {
-    max-width: 500px; }
-  /* line 256, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.large {
-    max-width: 800px; }
-  /* line 257, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-  .f-dropdown.mega {
-    width: 100% !important;
-    max-width: 100% !important; }
-    /* line 261, bower_components/foundation/scss/foundation/components/_dropdown.scss */
-    .f-dropdown.mega.open {
-      left: 0 !important; }
-
-/* line 123, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button, button.dropdown {
-  position: relative;
-  padding-right: 3.5625rem; }
-  /* line 63, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-  .dropdown.button::after, button.dropdown::after {
-    border-color: #FFFFFF transparent transparent transparent;
-    border-style: solid;
-    content: "";
-    display: block;
-    height: 0;
-    position: absolute;
-    top: 50%;
-    width: 0; }
-  /* line 98, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-  .dropdown.button::after, button.dropdown::after {
-    border-width: 0.375rem;
-    right: 1.40625rem;
-    margin-top: -0.15625rem; }
-  /* line 117, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-  .dropdown.button::after, button.dropdown::after {
-    border-color: #FFFFFF transparent transparent transparent; }
-  /* line 124, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-  .dropdown.button.tiny, button.dropdown.tiny {
-    padding-right: 2.625rem; }
-    /* line 78, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-    .dropdown.button.tiny:after, button.dropdown.tiny:after {
-      border-width: 0.375rem;
-      right: 1.125rem;
-      margin-top: -0.125rem; }
-    /* line 117, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-    .dropdown.button.tiny::after, button.dropdown.tiny::after {
-      border-color: #FFFFFF transparent transparent transparent; }
-  /* line 125, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-  .dropdown.button.small, button.dropdown.small {
-    padding-right: 3.0625rem; }
-    /* line 88, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-    .dropdown.button.small::after, button.dropdown.small::after {
-      border-width: 0.4375rem;
-      right: 1.3125rem;
-      margin-top: -0.15625rem; }
-    /* line 117, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-    .dropdown.button.small::after, button.dropdown.small::after {
-      border-color: #FFFFFF transparent transparent transparent; }
-  /* line 126, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-  .dropdown.button.large, button.dropdown.large {
-    padding-right: 3.625rem; }
-    /* line 108, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-    .dropdown.button.large::after, button.dropdown.large::after {
-      border-width: 0.3125rem;
-      right: 1.71875rem;
-      margin-top: -0.15625rem; }
-    /* line 117, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-    .dropdown.button.large::after, button.dropdown.large::after {
-      border-color: #FFFFFF transparent transparent transparent; }
-  /* line 127, bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-  .dropdown.button.secondary:after, button.dropdown.secondary:after {
-    border-color: #333333 transparent transparent transparent; }
-
 /* Standard Forms */
 /* line 387, bower_components/foundation/scss/foundation/components/_forms.scss */
 form {
@@ -3952,79 +3065,30 @@ meta.foundation-mq-topbar {
     display: block;
     position: absolute !important; } }
 
-/* line 123, bower_components/foundation/scss/foundation/components/_sub-nav.scss */
-.sub-nav {
-  display: block;
-  margin: -0.25rem 0 1.125rem;
-  overflow: hidden;
-  padding-top: 0.25rem;
-  width: auto; }
-  /* line 67, bower_components/foundation/scss/foundation/components/_sub-nav.scss */
-  .sub-nav dt {
-    text-transform: uppercase; }
-  /* line 73, bower_components/foundation/scss/foundation/components/_sub-nav.scss */
-  .sub-nav dt,
-  .sub-nav dd,
-  .sub-nav li {
-    color: #999999;
-    float: left;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 0.875rem;
-    font-weight: normal;
-    margin-left: 1rem;
-    margin-bottom: 0; }
-    /* line 82, bower_components/foundation/scss/foundation/components/_sub-nav.scss */
-    .sub-nav dt a,
-    .sub-nav dd a,
-    .sub-nav li a {
-      color: #999999;
-      padding: 0.1875rem 1rem;
-      text-decoration: none; }
-      /* line 87, bower_components/foundation/scss/foundation/components/_sub-nav.scss */
-      .sub-nav dt a:hover,
-      .sub-nav dd a:hover,
-      .sub-nav li a:hover {
-        color: #737373; }
-    /* line 92, bower_components/foundation/scss/foundation/components/_sub-nav.scss */
-    .sub-nav dt.active a,
-    .sub-nav dd.active a,
-    .sub-nav li.active a {
-      border-radius: 3px;
-      background: #008CBA;
-      color: #FFFFFF;
-      cursor: default;
-      font-weight: normal;
-      padding: 0.1875rem 1rem; }
-      /* line 100, bower_components/foundation/scss/foundation/components/_sub-nav.scss */
-      .sub-nav dt.active a:hover,
-      .sub-nav dd.active a:hover,
-      .sub-nav li.active a:hover {
-        background: #0078a0; }
-
-/* line 14, stdin */
+/* line 9, stdin */
 * {
   margin: 0; }
 
-/* line 18, stdin */
+/* line 13, stdin */
 html, body {
   height: 100%; }
 
-/* line 23, stdin */
+/* line 18, stdin */
 body {
   background-image: url(/assets/bg.jpg);
   background-size: cover; }
 
-/* line 28, stdin */
+/* line 23, stdin */
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -50px; }
 
-/* line 34, stdin */
+/* line 29, stdin */
 .page-wrap:after {
   content: ""; }
 
-/* line 38, stdin */
+/* line 33, stdin */
 .logo {
   background-color: white;
   margin-left: auto;
@@ -4032,34 +3096,34 @@ body {
   text-align: center;
   padding: 0px; }
 
-/* line 46, stdin */
+/* line 41, stdin */
 .container {
   position: relative;
   left: 0;
   top: 0; }
 
-/* line 53, stdin */
+/* line 48, stdin */
 .logo-image1 {
   position: relative;
   top: 0;
   left: 0; }
 
-/* line 57, stdin */
+/* line 52, stdin */
 .logo-image2 {
   position: absolute;
-  top: 30px;
+  top: 40%;
   left: -90px;
   min-width: 400px; }
 
-/* line 64, stdin */
+/* line 59, stdin */
 nav.top-bar {
   text-align: center; }
 
-/* line 68, stdin */
+/* line 63, stdin */
 section.top-bar-section {
   display: inline-block; }
 
-/* line 72, stdin */
+/* line 67, stdin */
 .top-bar-section ul li > a.button {
   font-size: 0.8125rem;
   padding-left: 0.9375rem;
@@ -4068,54 +3132,54 @@ section.top-bar-section {
   border-color: #007095;
   color: white; }
 
-/* line 81, stdin */
+/* line 76, stdin */
 .feed {
   padding: 10px; }
 
-/* line 85, stdin */
+/* line 80, stdin */
 .post {
   margin: 3% 3% 3% 3%;
   padding: 2%; }
 
-/* line 90, stdin */
+/* line 85, stdin */
 .panel {
   background-color: white;
   padding: 5%;
   margin: 5%; }
 
-/* line 96, stdin */
+/* line 91, stdin */
 .site-footer, .page-wrap:after {
   height: 50px; }
 
-/* line 99, stdin */
+/* line 94, stdin */
 .site-footer {
   background: #3A3A3A;
   display: block; }
 
-/* line 105, stdin */
+/* line 100, stdin */
 .hidden {
   display: none; }
 
-/* line 109, stdin */
+/* line 104, stdin */
 .container:hover .visible {
   display: none; }
 
-/* line 114, stdin */
+/* line 109, stdin */
 .container:hover .hidden {
   display: block; }
 
-/* line 118, stdin */
+/* line 113, stdin */
 .hidden, .visible {
   height: 100%; }
 
-/* line 122, stdin */
+/* line 117, stdin */
 ul {
   display: block;
   text-align: center;
   padding: 0px;
   padding-top: 10px; }
 
-/* line 128, stdin */
+/* line 123, stdin */
 .site-footer li {
   display: inline-block;
   list-style: none;

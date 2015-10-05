@@ -1,36 +1,78 @@
 var feed = document.getElementById('feed');
 
-$.getJSON
-(
-  '/api/my_boards.json',
-  function foo(data) {
-    var post = data.data.children;
+window.onload = function() {
+  loadMyBoards();
+};
 
-    for (var i = 0; i <= post.length; i++) {
-      if (i % 2 === 0) {
+function loadMyBoards() {
+  clearFeed();
+  $.getJSON(
+    '/api/my_boards.json',
+    function foo(data) {
+      var post = data.data.children;
 
-        var row = document.createElement('div');
-        row.setAttribute(null, 'data-equalizer');
-        row.className = 'row';
-        row.id = 'row' + i;
-
-        //row = "data-equalizer";
-        feed.appendChild(row);
-
-        var post1 = makePost(post[i], i);
-        row.appendChild(post1);
-
-        var post2 = makePost(post[i + 1], i);
-        row.appendChild(post2);
-
+      for (var i = 0; i <= post.length; i++) {
+        if (i % 2 === 0) {
+          makeRow(post, i)
+        }
       }
     }
-  }
-)
+  )
+}
 
-// .success(function() { alert("second success"); })
-// .error(function() { alert("error"); })
-// .complete(function() { alert("complete"); });
+function loadRandom() {
+  clearFeed();
+  $.getJSON(
+    '/api/random.json',
+    function foo(data) {
+      var post = data.data.children;
+
+      for (var i = 0; i <= post.length; i++) {
+        if (i % 2 === 0) {
+          makeRow(post, i)
+        }
+      }
+    }
+  )
+}
+
+function loadGetTheApp() {
+  clearFeed();
+  $.getJSON(
+    '/api/get_the_app.json',
+    function foo(data) {
+      var post = data.data.children;
+
+      for (var i = 0; i <= post.length; i++) {
+        if (i % 2 === 0) {
+          makeRow(post, i)
+        }
+      }
+    }
+  )
+}
+
+function clearFeed() {
+  while (feed.firstChild) {
+    feed.removeChild(feed.firstChild);
+  }
+}
+
+function makeRow(post, i) {
+  var row = document.createElement('div');
+  row.setAttribute(null, 'data-equalizer');
+  row.className = 'row';
+  row.id = 'row' + i;
+
+  //row = "data-equalizer";
+  feed.appendChild(row);
+
+  var post1 = makePost(post[i], i);
+  row.appendChild(post1);
+
+  var post2 = makePost(post[i + 1], i);
+  row.appendChild(post2);
+}
 
 function makePost(post, i) {
   var post1 = document.createElement('div');

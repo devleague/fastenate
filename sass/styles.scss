@@ -2,12 +2,7 @@
 
 @import 'foundation/components/grid';
 @import 'foundation/components/block-grid';
-@import 'foundation/components/button-groups';
-@import 'foundation/components/buttons';
-@import 'foundation/components/dropdown';
-@import 'foundation/components/dropdown-buttons';
 @import 'foundation/components/top-bar';
-@import 'foundation/components/sub-nav';
 
 $footerheight : 50px;
 
@@ -56,7 +51,7 @@ body {
 
 .logo-image2 {
   position: absolute;
-  top: 30px;
+  top: 40%;
   left: -90px;
   min-width: 400px;
 }
