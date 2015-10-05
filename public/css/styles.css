@@ -4022,24 +4022,44 @@ body {
 
 /* line 34, stdin */
 .page-wrap:after {
-  content: "";
-  display: block; }
+  content: ""; }
 
-/* line 39, stdin */
+/* line 38, stdin */
 .logo {
   background-color: white;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  text-align: center;
+  padding: 0px; }
 
 /* line 46, stdin */
+.container {
+  position: relative;
+  left: 0;
+  top: 0; }
+
+/* line 53, stdin */
+.logo-image1 {
+  position: relative;
+  top: 0;
+  left: 0; }
+
+/* line 57, stdin */
+.logo-image2 {
+  position: absolute;
+  top: 30px;
+  left: -90px;
+  min-width: 400px; }
+
+/* line 64, stdin */
 nav.top-bar {
   text-align: center; }
 
-/* line 50, stdin */
+/* line 68, stdin */
 section.top-bar-section {
   display: inline-block; }
 
-/* line 54, stdin */
+/* line 72, stdin */
 .top-bar-section ul li > a.button {
   font-size: 0.8125rem;
   padding-left: 0.9375rem;
@@ -4048,54 +4068,54 @@ section.top-bar-section {
   border-color: #007095;
   color: white; }
 
-/* line 63, stdin */
+/* line 81, stdin */
 .feed {
   padding: 10px; }
 
-/* line 67, stdin */
+/* line 85, stdin */
 .post {
   margin: 3% 3% 3% 3%;
   padding: 2%; }
 
-/* line 72, stdin */
+/* line 90, stdin */
 .panel {
   background-color: white;
   padding: 5%;
   margin: 5%; }
 
-/* line 78, stdin */
+/* line 96, stdin */
 .site-footer, .page-wrap:after {
   height: 50px; }
 
-/* line 81, stdin */
+/* line 99, stdin */
 .site-footer {
   background: #3A3A3A;
   display: block; }
 
-/* line 87, stdin */
+/* line 105, stdin */
 .hidden {
   display: none; }
 
-/* line 91, stdin */
+/* line 109, stdin */
 .container:hover .visible {
   display: none; }
 
-/* line 96, stdin */
+/* line 114, stdin */
 .container:hover .hidden {
   display: block; }
 
-/* line 100, stdin */
+/* line 118, stdin */
 .hidden, .visible {
   height: 100%; }
 
-/* line 104, stdin */
+/* line 122, stdin */
 ul {
   display: block;
   text-align: center;
   padding: 0px;
   padding-top: 10px; }
 
-/* line 110, stdin */
+/* line 128, stdin */
 .site-footer li {
   display: inline-block;
   list-style: none;

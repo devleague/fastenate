@@ -33,15 +33,33 @@ body {
 
 .page-wrap:after {
   content: "";
-  display: block;
 }
 
 .logo {
-    background-color: white;
-    margin-left: auto;
+  background-color: white;
+  margin-left: auto;
   margin-right: auto;
+  text-align:center;
+  padding: 0px;
 }
 
+.container {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+
+.logo-image1 {
+  position: relative; top: 0; left: 0;
+}
+
+.logo-image2 {
+  position: absolute;
+  top: 30px;
+  left: -90px;
+  min-width: 400px;
+}
 
 nav.top-bar {
 text-align:center;
