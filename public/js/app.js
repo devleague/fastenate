@@ -1,53 +1,16 @@
 var feed = document.getElementById('feed');
 
 window.onload = function() {
-  loadMyBoards();
+  loadBoard('my_boards');
 };
 
-function loadMyBoards() {
+function loadBoard(boardName) {
   clearFeed();
   $.getJSON(
-    '/api/my_boards.json',
+    '/api/' + boardName + '.json',
     function foo(data) {
       var post = data.data.children;
-
-      for (var i = 0; i <= post.length; i++) {
-        if (i % 2 === 0) {
-          makeRow(post, i)
-        }
-      }
-    }
-  )
-}
-
-function loadRandom() {
-  clearFeed();
-  $.getJSON(
-    '/api/random.json',
-    function foo(data) {
-      var post = data.data.children;
-
-      for (var i = 0; i <= post.length; i++) {
-        if (i % 2 === 0) {
-          makeRow(post, i)
-        }
-      }
-    }
-  )
-}
-
-function loadGetTheApp() {
-  clearFeed();
-  $.getJSON(
-    '/api/get_the_app.json',
-    function foo(data) {
-      var post = data.data.children;
-
-      for (var i = 0; i <= post.length; i++) {
-        if (i % 2 === 0) {
-          makeRow(post, i)
-        }
-      }
+      makeAllRows(post)
     }
   )
 }
@@ -55,6 +18,14 @@ function loadGetTheApp() {
 function clearFeed() {
   while (feed.firstChild) {
     feed.removeChild(feed.firstChild);
+  }
+}
+
+function makeAllRows(post) {
+  for (var i = 0; i <= post.length; i++) {
+    if (i % 2 === 0) {
+      makeRow(post, i)
+    }
   }
 }
 
@@ -66,10 +37,8 @@ function makeRow(post, i) {
 
   //row = "data-equalizer";
   feed.appendChild(row);
-
   var post1 = makePost(post[i], i);
   row.appendChild(post1);
-
   var post2 = makePost(post[i + 1], i);
   row.appendChild(post2);
 }
@@ -84,7 +53,10 @@ function makePost(post, i) {
   post1.appendChild(panel);
 
   var image = document.createElement('img');
+  console.log(image);
   image.src = post.data.url;
+  image.alt = ' ';
+  console.log(image.src)
   panel.appendChild(image);
 
   var title = document.createElement('h2');
