@@ -1,5 +1,127 @@
+@import "partials/_settings";
+
+@import 'foundation/components/grid';
+@import 'foundation/components/block-grid';
+@import 'foundation/components/top-bar';
+
+$footerheight : 50px;
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+
 body {
-  h1 {
-    background-color: #fff;
-  }
+  background-image: url(/assets/bg.jpg);
+  background-size: cover;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -$footerheight;
+}
+
+.page-wrap:after {
+  content: "";
+}
+
+.logo {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  padding: 0px;
+}
+
+.container {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+
+.logo-image1 {
+  position: relative; top: 0; left: 0;
+}
+
+.logo-image2 {
+  position: absolute;
+  top: 40%;
+  left: -90px;
+  min-width: 400px;
+}
+
+nav.top-bar {
+text-align:center;
+}
+
+section.top-bar-section {
+display: inline-block;
+}
+
+.top-bar-section ul li > a.button {
+    font-size: 0.8125rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    background-color: #333333;
+    border-color: #007095;
+    color: white;
+}
+
+.feed {
+ padding: 10px;
+}
+
+.post {
+    margin: 3% 3% 3% 3%;
+    padding: 2%;
+}
+
+.panel {
+  background-color: white;
+  padding: 5%;
+  margin: 5%;
+}
+
+.site-footer, .page-wrap:after {
+  height: $footerheight;
+}
+.site-footer {
+  background: #3A3A3A;
+  display: block;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.container:hover .visible
+{
+    display: none;
+}
+
+.container:hover .hidden {
+    display: block;
+}
+
+.hidden, .visible {
+    height: 100%
+}
+
+ul {
+    display: block;
+    text-align:center;
+    padding: 0px;
+    padding-top: 10px
+}
+.site-footer li {
+    display: inline-block;
+    list-style:none;
+    margin-left:5px;
 }

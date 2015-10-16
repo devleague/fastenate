@@ -3,9 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <title>Fastenate | The World's Most Awesome Board of Stuff</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="./js/modernizr.js"></script>
 </head>
 <body>
-  
+  <div class="page-wrap">
+
+    <!-- Header Section -->
+    <header class="logo">
+      <div class="row">
+          <div class="small-3 small-uncentered medium-centered columns">
+            <div class="container">
+              <img class="logo-image1" src="assets/logo.svg">
+              <img class="logo-image2" src="assets/header_bg.svg">
+            </div>
+          </div>
+      </div>
+    </header>
+
+
+    <nav class="top-bar" data-topbar role="navigation">
+     <section class="top-bar-section">
+       <ul class="right">
+         <li>
+           <a href="#" class="button" onclick="loadBoard('random')">RANDOM</a>
+         </li>
+         <li>&middot;</li>
+         <li>
+           <a href="#" class="button" onclick="loadBoard('my_boards')">MY BOARDS</a>
+         </li>
+         <li>&middot;</li>
+         <li>
+           <a href="#" class="button" onclick="loadBoard('get_the_app')">GET THE APP</a>
+         </li>
+        </ul>
+        <ul class="left">
+        </ul>
+      </section>
+    </nav>
+
+    <!-- Content Blocks -->
+    <div class="feed" id="feed">
+
+    <!--   <div class="row" data-equalizer>
+
+        <div class="post small-12 small-centered medium-6 medium-uncentered large-6 columns">
+          <div class="panel" data-equalizer-watch>
+            <img src="http://lorempixel.com/500/300/" alt="">
+            <h2>Funny & Cute Animals Compilation 2014 New</h2>
+            <p style="color:grey">by funfunnycomic &middot; 4 months ago &middot; 680,636 views</p>
+            <p>Funny & Cute Animals Compilation 2014 New , Hilarious Animals Compilation 2014, Fun,funny, hilarious dogs,horses,goat, cats, ...</p>
+          </div>
+        </div>
+
+        <div class="post small-12 small-centered medium-6 medium-uncentered large-6 columns">
+          <div class="panel" data-equalizer-watch>
+            <img src="http://lorempixel.com/500/300/" alt="">
+            <h2>Funny & Cute Animals Compilation 2014 New</h2>
+            <p style="color:grey">by funfunnycomic &middot; 4 months ago &middot; 680,636 views</p>
+            <p>Funny & Cute Animals Compilation 2014 New , Hilarious Animals Compilation 2014, Fun,funny, hilarious dogs,horses,goat, cats, asljaslkdjalskjdl;aksjd;lkasjd;lkasj laskdj;alksj aslkdjasß...</p>
+          </div>
+        </div>
+
+      </div>
+    -->
+    </div> <!-- Feed -->
+
+    <footer class="site-footer">
+      <div class="row">
+        <div class="small-3 small-centered columns">
+          <ul>
+            <li><a href="#"><img src='assets/facebook_grey.svg'/></a></li>
+            <li>
+              <a href="#">
+                <span class="container">
+                  <span class="visible"><img src="assets/instagram_grey.svg"></span>
+                  <span class="hidden"><img src="assets/instagram_orange.svg"></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>  <!-- page-wrap-->
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="./js/fastclick.js"></script>
+  <script src="./js/foundation.min.js"></script>
+  <script src="./js/app.js"></script>
+
+  <script>
+    $(document).foundation();
+  </script>
+
 </body>
 </html>

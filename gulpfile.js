@@ -10,15 +10,16 @@ var PathTo = {
 };
 
 gulp.task('watch-files', function (){
-  gulp.watch(PathTo.SassFiles, ['compile-sass']);
+  gulp.watch(PathTo.SassFiles, ['sass']);
   gulp.watch(PathTo.PublicCssFiles, ['html']);
 });
 
-gulp.task('compile-sass', function (){
-  return gulp
-          .src(PathTo.SassFiles, ['compile-sass'])
-          .pipe(sass({ errLogToConsole: true }))
-          .pipe(gulp.dest(PathTo.PublicCss));
+gulp.task('sass', function () {
+  return gulp.src('./sass/*.scss')
+      .pipe(sass({
+        sourceComments: true,
+        includePaths: ['bower_components/foundation/scss']
+      }).on('error', sass.logError)).pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('html', function (){
@@ -34,4 +35,4 @@ gulp.task('public-server', function (){
   });
 });
 
-gulp.task('default', ['public-server', 'compile-sass', 'watch-files']);
+gulp.task('default', ['public-server', 'sass', 'watch-files']);
