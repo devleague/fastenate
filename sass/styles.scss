@@ -69,7 +69,8 @@ body {
   padding-bottom: 50px;
 
   @media #{$medium} {
-    justify-content: flex-start;
+    flex: 1 0 40%;
+
   }
 
   h1{
@@ -90,7 +91,7 @@ body {
   }
 
   @media #{$medium} {
-    align-items: flex-start;
+    // align-items: flex-start;
     max-width:300px;
     margin: 10px 10px 10px 10px;
     // flex: auto;

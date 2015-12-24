@@ -30,10 +30,12 @@ function getApi (results) {
     var $title = $("<h1 />", {text: child.data.title});
     var $author = $("<h2 />", {text: child.data.author});
     var $time = $("<p />", {text: child.data.created});
-    var $description = $("<a />", {href: child.data.permalink});
+    var $description = $("<p />", {text: 'This is the most important sentence you have ever and will ever read and was ever written and oh shit it\'s just so good.'});
 
     $('#main').append(
-      $div.append($pic, $title, $author, $time, $description)
+      $('<a />', {href: child.data.permalink}).append(
+        $div.append($pic, $title, $author, $time, $description)
+      )
     );
   });
 }
