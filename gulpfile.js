@@ -11,7 +11,7 @@ var PathTo = {
 
 gulp.task('watch-files', function (){
   gulp.watch(PathTo.SassFiles, ['compile-sass']);
-  gulp.watch(PathTo.PublicCssFiles, ['html']);
+  gulp.watch("./public/**/*", ['html']);
 });
 
 gulp.task('compile-sass', function (){
