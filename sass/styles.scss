@@ -1,5 +1,49 @@
-body {
-  h1 {
-    background-color: #fff;
-  }
+* {
+  box-sizing: border-box;
 }
+
+body {
+  background-image: url("/assets/bg.jpg");
+  margin: 0;
+
+}
+h1 {
+  background-color: white;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: 'Arial';
+}
+
+.block{
+  margin: 10px;
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  font-family: 'Oswald Regular';
+}
+
+.block-title{
+  border: 3px solid white;
+  margin: 0;
+}
+
+nav{
+  display: flex;
+}
+//decendent of tag = space
+nav a{
+  // display: block;
+  flex: 1 1 100%;
+  justify-content: space-between;
+  color: #818285;
+  background-color: #3A3A3C;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid white;
+  height: 65px;
+}
+
+
+//command shift 4 = screenshot in seeking height ratios
+//command tab colormeter = getting color, command shift c
