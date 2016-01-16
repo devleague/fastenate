@@ -14,8 +14,14 @@ $(function(){
   });
 });
 
-function post (posts){
-  console.log(posts);
-  var $div = $('div');
 
+
+function post (){
+  var $nav = $('<nav />');
+
+  $.getJSON('/api/get_the_app.json', function (data){
+    $(nav).atrr('/get-app').click(function (events){
+      $.each(data).appendTo(".block-four");
+    });
+  });
 }
