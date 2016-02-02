@@ -17,20 +17,20 @@ h1 {
 .block{
   margin: 10px;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 20px;
   font-family: 'Oswald Regular';
 }
 
 .social-media{
-  border: 2px solid red;
+  border: 2px solid yellow;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .block-title{
-  border: 3px solid white;
+  border: 3px solid red;
   margin: 0;
 }
 
@@ -47,7 +47,7 @@ nav a{
   text-align: center;
   text-decoration: none;
   padding: 20px;
-  border: 1px solid white;
+  border: 1px solid pink;
   height: 65px;
 }
 
