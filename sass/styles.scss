@@ -8,29 +8,42 @@ body {
 
 }
 h1 {
-  background-color: white;
+  background-color: green;
   box-sizing: border-box;
-  text-align: left;
   font-family: 'Arial';
+  text-align: left;
 }
 
-.block{
-  margin: 10px;
+.mainContainer{
   background-color: white;
-  border: 2px solid white;
-  padding: 20px;
+  border: 2px solid yellow;
   font-family: 'Oswald Regular';
+  margin: 10px;
+  padding: 20px;
+}
+
+.inContainer{
+  border: 2px solid blue;
+  justify-content: space-between;
+  flex: 1 1 100%;
+  font-family: 'Oswald Regular';
+  margin: 10px;
+  padding: 20px;
+}
+
+.image{
+  image-rendering: auto;
 }
 
 .social-media{
-  border: 2px solid yellow;
-  margin: 0;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .block-title{
   border: 3px solid red;
+  background-color: white;
   margin: 0;
 }
 
@@ -39,16 +52,16 @@ nav{
 }
 //decendent of tag = space
 nav a{
-  // display: block;
-  flex: 1 1 100%;
-  justify-content: space-between;
-  color: #818285;
   background-color: #3A3A3C;
+  border: 1px solid #818285;
+  color: #818285;
+  display: block;
+  flex: 1 1 100%;
+  height: 65px;
+  justify-content: space-between;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
-  padding: 20px;
-  border: 1px solid pink;
-  height: 65px;
 }
 
 //command shift 4 = screenshot in seeking height ratios
