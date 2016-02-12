@@ -15,7 +15,7 @@ h1 {
 }
 
 .mainContainer{
-  background-color: white;
+  background-image: url("/assets/bg.jpg");
   border: 2px solid yellow;
   font-family: 'Oswald Regular';
   margin: 10px;
@@ -24,15 +24,19 @@ h1 {
 
 .inContainer{
   border: 2px solid blue;
-  justify-content: space-between;
   flex: 1 1 100%;
   font-family: 'Oswald Regular';
+  justify-content: center;
   margin: 10px;
   padding: 20px;
+  text-align: center;
 }
 
 .image{
-  image-rendering: auto;
+  border-radius: 10%;
+  border: 2px solid red;
+  display: felx;
+  justify-content: center;
 }
 
 .social-media{
