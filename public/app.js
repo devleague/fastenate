@@ -11,9 +11,41 @@ https://www.youtube.com/watch?v=j-S5MBs4y0Q*/
 //       4. how to make ajax more dry with boards? Areas that are changing, make into a var
 //       5. had to rename the success getApp function since was overriding
 
+
+
 $(function () {
   $('#clickRandom').click(function(){
-    console.log("in click function");
+    console.log("in getRandom function");
+    $.ajax('api/random.json', {
+    success: getRandom
+    });
+  });
+});
+
+function getRandom (boards){
+  var $titleOne = $('<h2>' + 'Be Yourself .. Be Random' + '</h2>');
+  var $mainDiv = $('.mainContainer');
+  var $random = $('.random');
+
+  $random.append($titleOne);
+  //traversing the my_boards.json
+  //looked at how json file is setup, .data.children etc.
+  boards.data.children.forEach(function (board){
+    var srcPath = board.data.thumbnail;
+    var $listTitle = $('<li />').text(board.data.title);
+    var $img = $('<img src =' + srcPath +'>');
+
+    $random.addClass('inContainer');
+    $img.addClass('image');
+    $random.append($listTitle);
+    $random.append($img);
+  });
+  $mainDiv.append($random);
+}
+
+$(function () {
+  $('#clickMyBoards').click(function(){
+    console.log("in getBoards function");
     $.ajax('api/my_boards.json', {
       success: getBoards
     });
@@ -40,33 +72,32 @@ function getBoards (boards){
   $mainDiv.append($myBoards);
 }
 
-
 $(function () {
-  $.ajax('api/random.json', {
-    success: getRandom
+  $('#clickGetApp').click(function(){
+    console.log("in getApp function");
+    $.ajax('api/get_the_app.json', {
+      success: getApp
+    });
   });
 });
 
-function getRandom (boards){
-  var $titleOne = $('<h2>' + 'Be Yourself .. Be Random' + '</h2>');
+function getApp (boards){
+  var $titleTwo = $('<h2>' + 'Me App es su App' + '</h2>');
   var $mainDiv = $('.mainContainer');
-  var $random = $('.random');
+  var $myApp = $('.myApp');
 
-  $random.append($titleOne);
-  //traversing the my_boards.json
-  //looked at how json file is setup, .data.children etc.
+  $myApp.append($titleTwo);
+
   boards.data.children.forEach(function (board){
     var srcPath = board.data.thumbnail;
     var $listTitle = $('<li />').text(board.data.title);
     var $img = $('<img src =' + srcPath +'>');
 
-    $random.addClass('inContainer');
+    $myApp.addClass('inContainer');
     $img.addClass('image');
-    $random.append($listTitle);
-    $random.append($img);
+    $myApp.append($listTitle);
+    $myApp.append($img);
   });
-  $mainDiv.append($random);
+  $mainDiv.append($myApp);
 }
-
-
 
