@@ -1,5 +1,72 @@
-body {
-  h1 {
-    background-color: #fff;
-  }
+* {
+  box-sizing: border-box;
 }
+
+body {
+  background-image: url("/assets/bg.jpg");
+  margin: 0;
+
+}
+h1 {
+  background-color: green;
+  box-sizing: border-box;
+  font-family: 'Arial';
+  text-align: left;
+}
+
+.mainContainer{
+  background-image: url("/assets/bg.jpg");
+  border: 2px solid yellow;
+  font-family: 'Oswald Regular';
+  margin: 10px;
+  padding: 20px;
+}
+
+.inContainer{
+  border: 2px solid blue;
+  flex: 1 1 100%;
+  font-family: 'Oswald Regular';
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.image{
+  border-radius: 10%;
+  border: 2px solid red;
+  display: felx;
+  justify-content: center;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.block-title{
+  border: 3px solid red;
+  background-color: white;
+  margin: 0;
+}
+
+nav{
+  display: flex;
+}
+//decendent of tag = space
+nav a{
+  background-color: #3A3A3C;
+  border: 1px solid #818285;
+  color: #818285;
+  display: block;
+  flex: 1 1 100%;
+  height: 65px;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+//command shift 4 = screenshot in seeking height ratios
+//command tab colormeter = getting color, command shift c

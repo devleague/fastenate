@@ -2,10 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fastenate | The World's Most Awesome Board of Stuff</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 <body>
-  
+  <div class ="block block-title">
+    <img src="/assets/logo.svg">
+    <!-- use header for medium size layout -->
+    <!-- <img src="/assets/header_bg.svg"> -->
+  </div>
+    <div class="social-media">
+    <img src="/assets/instagram_grey.svg"></a>
+    <img src="/assets/facebook_grey.svg"></a>
+    </div>
+  <nav>
+  <!-- single page application not grabbing via routes, using set json file so put "#"-->
+    <a href="#" id="clickRandom">RANDOM</a>
+    <a href="#" id="clickMyBoards">MY BOARDS</a>
+    <a href="#" id="clickGetApp">GET THE APP</a>
+  </nav>
+    <div class="mainContainer"></div>
+      <div class="random"></div>
+      <div class="myBoards"></div>
+      <div class="myApp"></div>
+    <script src="/app.js"></script>
 </body>
 </html>
