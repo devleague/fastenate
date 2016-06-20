@@ -1,6 +1,6 @@
 @import 'partials/reset';
 @import 'partials/clearfix';
-@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 
 // VARIABLES
@@ -48,11 +48,11 @@ body {
 header {
   background-color: #FFF;
   width: 100%;
-  padding: 5px 10px;
   display: flex;
   flex-flow: row wrap;
   align-items:center;
   justify-content: space-between;
+
   @include respond-to('medium'){
     background-image: url('/assets/header_bg.svg');
     background-repeat: no-repeat;
@@ -60,14 +60,16 @@ header {
   }
   .logo {
     flex: 0 0 auto;
+    padding-left: 5px;
     @include respond-to('medium'){
       display: block;
       margin: 0 auto;
-      padding-left: 30px;
+      padding-left: 45px;
     }
   }
   .add-button {
     flex: 0 0 auto;
+    padding-right: 15px;
     a {
       width: 30px;
       height: 30px;
@@ -121,6 +123,86 @@ nav {
         content: "•";
         padding: 0 8px;
         color: $light-grey;
+      }
+    }
+  }
+}
+
+//Main container w/dynamic content
+#main-content{
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  @include respond-to('medium'){
+    padding: 30px 0;
+    width: 750px;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .post{
+    flex-flow: 0 0 auto;
+    background-color: #FFF;
+    width: 455px;
+    height: auto;
+    margin: 5px;
+    padding: 25px;
+    color: $dark-grey;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.33);
+    &:hover{
+      padding: 15px;
+      border: 5px $light-orange solid;
+    }
+    @include respond-to('medium'){
+      width: 325px;
+      height: 400px;
+      flex-flow: 0 0 50%;
+      margin: 15px;
+    }
+    .image img{
+      width: 405px;
+      height: 250px;
+      object-fit: cover;
+      @include respond-to('medium'){
+        width: 275px;
+        height: 165px;
+      }
+    }
+    .text{
+      padding-top: 15px;
+      .title{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.7em;
+        font-weight: 300;
+        line-height: 120%;
+        @include respond-to('medium'){
+          font-size: 1.30em;
+        }
+      }
+      .stats{
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 130%;
+        color: lighten($dark-grey, 20%);
+        padding: 5px 0 10px;
+        @include respond-to('medium'){
+          font-size: 0.9em;
+          padding: 10px 0 10px;
+        }
+      }
+      .summary{
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 130%;
+        @include respond-to('medium'){
+          font-size: 0.9em;
+        }
       }
     }
   }
