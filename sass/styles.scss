@@ -1,5 +1,247 @@
+@import 'partials/reset';
+@import 'partials/clearfix';
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+// VARIABLES
+$logo-red: #ad3a22;
+$dark-orange: #FF5300;
+$light-orange: #FF9C00;
+$dark-grey: #424245;
+$light-grey: #8C8D90;
+
+// MIXIN
+$breakpoints: (
+  'medium': 600px,
+  'large':  1200px
+) !default;
+
+// Found this Mixin at CSS-Tricks
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
 body {
-  h1 {
-    background-color: #fff;
+  background-image: url('/assets/bg.jpg');
+}
+
+//Header Container w/logo and button
+header {
+  background-color: #FFF;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items:center;
+  justify-content: space-between;
+
+  @include respond-to('medium'){
+    background-image: url('/assets/header_bg.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .logo {
+    flex: 0 0 auto;
+    padding-left: 5px;
+    @include respond-to('medium'){
+      display: block;
+      margin: 0 auto;
+      padding-left: 45px;
+    }
+  }
+  .add-button {
+    flex: 0 0 auto;
+    padding-right: 15px;
+    a {
+      width: 30px;
+      height: 30px;
+      border: 1px $dark-orange solid;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 2em;
+      text-align: center;
+      color: $logo-red;
+      line-height: 25px;
+      &:hover{
+        color: #FFF;
+        background-color:$dark-orange;
+      }
+    }
+  }
+}
+
+//Navigation Menu Bar
+nav {
+  background-color:$dark-grey;
+  height: 45px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  -webkit-box-shadow: inset 0px 15px 30px -20px rgba(0,0,0,1), 0px 1px 10px 0px rgba(0,0,0,0.3);;
+  -moz-box-shadow: inset 0px 15px 30px -20px rgba(0,0,0,1), 0px 1px 10px 0px rgba(0,0,0,0.3);;
+  box-shadow: inset 0px 15px 30px -20px rgba(0,0,0,1), 0px 1px 10px 0px rgba(0,0,0,0.3);;
+  @include respond-to('medium'){
+    justify-content: center;
+  }
+  a{
+    flex: 0 0 33%;
+    height: 45px;
+    color:$light-grey;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 45px;
+    &:hover{
+      color:$dark-orange;
+    }
+    &:not(:nth-child(3)){
+      border-right: 1px $light-grey solid;
+    }
+    @include respond-to('medium'){
+      flex: 0 0 auto;
+      &:not(:nth-child(3)){
+        border-right: none;
+      }
+      &:not(:first-child):before {
+        content: "•";
+        padding: 0 8px;
+        color: $light-grey;
+      }
+    }
+  }
+}
+
+//Main container w/dynamic content
+#main-content{
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  @include respond-to('medium'){
+    padding: 30px 0;
+    width: 750px;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .post{
+    flex-flow: 0 0 auto;
+    background-color: #FFF;
+    width: 455px;
+    height: auto;
+    margin: 5px;
+    padding: 25px;
+    color: $dark-grey;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.33);
+    &:hover{
+      padding: 20px;
+      border: 5px $light-orange solid;
+    }
+    @include respond-to('medium'){
+      width: 325px;
+      height: 400px;
+      flex-flow: 0 0 50%;
+      margin: 15px;
+    }
+    .image img{
+      width: 405px;
+      height: 250px;
+      object-fit: cover;
+      @include respond-to('medium'){
+        width: 275px;
+        height: 165px;
+      }
+    }
+    .text{
+      padding-top: 15px;
+      .title{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.7em;
+        font-weight: 300;
+        line-height: 120%;
+        @include respond-to('medium'){
+          font-size: 1.30em;
+        }
+      }
+      .stats{
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 130%;
+        color: lighten($dark-grey, 20%);
+        padding: 5px 0 10px;
+        @include respond-to('medium'){
+          font-size: 0.9em;
+          padding: 10px 0 10px;
+        }
+      }
+      .summary{
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 130%;
+        @include respond-to('medium'){
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
+//Footer with social media
+footer{
+  display: none;
+  @include respond-to('large'){
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: $dark-grey;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.5);
+    a{
+      flex: 0 0 25px;
+      &:first-child{
+        margin-right: 15px;
+      }
+    }
+    div{
+      width:25px;
+      height:25px;
+    }
+    .fb{
+      background-image: url('/assets/facebook_grey.svg');
+    }
+    .ig{
+      background-image: url('/assets/instagram_grey.svg');
+      &:hover{
+        background-image: url('/assets/instagram_orange.svg');
+      }
+    }
   }
 }
